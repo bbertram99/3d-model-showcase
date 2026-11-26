@@ -35,6 +35,9 @@ export const Navbar: React.FC<NavbarProps> = ({ modelCount, artCount }) => {
           <a href="#pipeline" className="transition hover:text-[#2DD4BF]">
             The Pipeline
           </a>
+          <a href="#guestbook" className="transition hover:text-[#2DD4BF]">
+            Guestbook
+          </a>
         </nav>
 
         <div className="flex items-center gap-2.5">

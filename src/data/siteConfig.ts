@@ -14,6 +14,10 @@ export const siteConfig = {
   printerName: 'Snapmaker U1',
   slicerStack: 'Snapmaker Orca / Multi-Plate',
   makerWorldUrl: 'https://makerworld.com/en/@bbertram',
+  visitorCounterNamespace: 'bbertram99-3d-showcase',
+  visitorCounterKey: 'visits',
+  // Paste your deployed Google Apps Script Web App URL (ending in /exec) here to enable global guestbook persistence:
+  guestbookApiUrl: '',
   socialLinks: [
     { label: 'MakerWorld (@bbertram)', href: 'https://makerworld.com/en/@bbertram' },
   ] as SocialLink[],

@@ -4,6 +4,7 @@ import { HeroSection } from './components/HeroSection';
 import { PipelineSection } from './components/PipelineSection';
 import { ModelsGallery } from './components/ModelsGallery';
 import { ArtGallery } from './components/ArtGallery';
+import { GuestbookSection } from './components/GuestbookSection';
 import { ModelDetailModal, ModelModalTab } from './components/ModelDetailModal';
 import { ArtDetailModal } from './components/ArtDetailModal';
 import { Footer } from './components/Footer';
@@ -63,6 +64,7 @@ export const App: React.FC = () => {
         <PipelineSection />
         <ModelsGallery models={modelsCatalog} onSelectModel={handleSelectModel} />
         <ArtGallery artworks={artProjects} onSelectArt={handleSelectArt} />
+        <GuestbookSection />
       </main>
 
       <Footer />
