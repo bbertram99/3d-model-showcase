@@ -20,7 +20,7 @@ interface ArtDetailModalProps {
   onNext: () => void;
 }
 
-type ArtTab = 'render' | 'input' | 'exploded' | 'plates' | 'engineering' | 'compare';
+type ArtTab = 'printed' | 'render' | 'input' | 'exploded' | 'plates' | 'engineering' | 'compare';
 
 export const ArtDetailModal: React.FC<ArtDetailModalProps> = ({
   artwork,
@@ -28,14 +28,18 @@ export const ArtDetailModal: React.FC<ArtDetailModalProps> = ({
   onPrev,
   onNext,
 }) => {
-  const [activeTab, setActiveTab] = useState<ArtTab>('render');
+  const hasPrinted = Boolean(artwork?.images.printed && artwork.images.printed.length > 0);
+  const [activeTab, setActiveTab] = useState<ArtTab>(hasPrinted ? 'printed' : 'render');
+  const [activePrintIdx, setActivePrintIdx] = useState(0);
   const [engineeringView, setEngineeringView] = useState<'topology' | 'relief' | 'construction'>(
     'topology'
   );
   const [zoomedSrc, setZoomedSrc] = useState<string | null>(null);
 
   useEffect(() => {
-    setActiveTab('render');
+    const printedReady = Boolean(artwork?.images.printed && artwork.images.printed.length > 0);
+    setActiveTab(printedReady ? 'printed' : 'render');
+    setActivePrintIdx(0);
     setEngineeringView('topology');
     setZoomedSrc(null);
   }, [artwork?.id]);
@@ -58,7 +62,10 @@ export const ArtDetailModal: React.FC<ArtDetailModalProps> = ({
 
   if (!artwork) return null;
 
+  const printedList = artwork.images.printed ?? [];
+
   const tabs: { id: ArtTab; label: string }[] = [
+    ...(printedList.length > 0 ? [{ id: 'printed' as ArtTab, label: 'Actual Print' }] : []),
     { id: 'render', label: 'Studio Render' },
     { id: 'input', label: '2D Design' },
     { id: 'exploded', label: 'Exploded 3D' },
@@ -167,6 +174,38 @@ export const ArtDetailModal: React.FC<ArtDetailModalProps> = ({
               ))}
             </div>
 
+            {activeTab === 'printed' && printedList.length > 0 && (
+              <div className="flex flex-col gap-3">
+                {renderStageImage(
+                  printedList[Math.min(activePrintIdx, printedList.length - 1)],
+                  `${artwork.title} actual 3D printed stained-glass wall art`,
+                  `Real multi-plate 3D-printed stained-glass relief fabricated on the ${artwork.printer} and assembled from interlocking colored filament tiles.`
+                )}
+                {printedList.length > 1 && (
+                  <div className="flex flex-wrap gap-2">
+                    {printedList.map((src, idx) => (
+                      <button
+                        key={src}
+                        type="button"
+                        onClick={() => setActivePrintIdx(idx)}
+                        className={`overflow-hidden rounded-lg border transition ${
+                          idx === activePrintIdx
+                            ? 'border-[#2DD4BF] ring-1 ring-[#2DD4BF]/50'
+                            : 'border-slate-700 opacity-75 hover:opacity-100'
+                        }`}
+                      >
+                        <img
+                          src={assetUrl(src)}
+                          alt={`${artwork.title} print photo ${idx + 1}`}
+                          className="h-14 w-20 object-cover"
+                        />
+                      </button>
+                    ))}
+                  </div>
+                )}
+              </div>
+            )}
+
             {activeTab === 'render' &&
               renderStageImage(
                 artwork.images.render,
@@ -247,9 +286,12 @@ export const ArtDetailModal: React.FC<ArtDetailModalProps> = ({
                 stages={[
                   { id: 'input', label: '2D Artwork', src: assetUrl(artwork.images.input) },
                   { id: 'render', label: '3D Relief Render', src: assetUrl(artwork.images.render) },
+                  ...(printedList.length > 0
+                    ? [{ id: 'printed', label: 'Actual Print', src: assetUrl(printedList[0]) }]
+                    : []),
                 ]}
                 initialLeftId="input"
-                initialRightId="render"
+                initialRightId={printedList.length > 0 ? 'printed' : 'render'}
                 aspectClass="aspect-[4/3]"
               />
             )}

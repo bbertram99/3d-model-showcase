@@ -110,6 +110,7 @@ IMAGE_JOBS: dict[str, list[tuple[str, str, int]]] = {
         ("Art/KQ5_Art_V2/inspection/03_multi_plate_slicer_layout.png", "plates.webp", 2000),
         ("Art/KQ5_Art_V2/inspection/01_segmentation_and_topology.png", "topology.webp", 2000),
         ("Art/KQ5_Art_V2/inspection/06_depth_relief_map.png", "relief.webp", 1600),
+        ("Art/KQ5_Art_V2/printed/printed_art.jpg", "printed-1.webp", 1800),
     ],
     "art-roll-initiative": [
         ("Art/Roll_For_Initiative/artwork/Roll_For_Initiative_03_step1_input.png", "input.webp", 1800),

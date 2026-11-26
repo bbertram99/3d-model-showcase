@@ -29,6 +29,7 @@ export interface ArtProject {
     topology: string;
     relief: string;
     construction?: string;
+    printed?: string[];
   };
 }
 
@@ -72,6 +73,7 @@ export const artProjects: ArtProject[] = [
       plates: 'media/art-kq5/plates.webp',
       topology: 'media/art-kq5/topology.webp',
       relief: 'media/art-kq5/relief.webp',
+      printed: ['media/art-kq5/printed-1.webp'],
     },
   },
   {

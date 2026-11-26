@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layers, Ruler, Sparkles, ArrowUpRight } from 'lucide-react';
+import { Layers, Ruler, Sparkles, ArrowUpRight, CheckCircle2 } from 'lucide-react';
 import { ArtProject } from '../data/artData';
 import { assetUrl } from '../utils/assets';
 
@@ -54,13 +54,22 @@ export const ArtGallery: React.FC<ArtGalleryProps> = ({ artworks, onSelectArt })
                 />
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#18202C] via-transparent to-transparent opacity-80" />
 
-                <div className="absolute top-3 left-3 rounded-md border border-slate-700/80 bg-[#0B0E13]/85 px-2.5 py-1 font-mono-tech text-[11px] uppercase tracking-wider text-[#F59E0B] backdrop-blur">
-                  {art.category}
+                <div className="absolute top-3 left-3 flex items-center gap-2">
+                  <span className="rounded-md border border-slate-700/80 bg-[#0B0E13]/85 px-2.5 py-1 font-mono-tech text-[11px] uppercase tracking-wider text-[#F59E0B] backdrop-blur">
+                    {art.category}
+                  </span>
                 </div>
 
-                <div className="absolute top-3 right-3 flex h-8 w-8 items-center justify-center rounded-full border border-slate-700/80 bg-[#0B0E13]/85 text-[#F1F5F9] opacity-0 transition group-hover:opacity-100">
-                  <ArrowUpRight className="h-4 w-4 text-[#F59E0B]" />
-                </div>
+                {art.images.printed && art.images.printed.length > 0 ? (
+                  <div className="absolute top-3 right-3 inline-flex items-center gap-1 rounded-full border border-[#2DD4BF]/40 bg-[#0B0E13]/85 px-2.5 py-1 font-mono-tech text-[10px] uppercase tracking-wider text-[#2DD4BF] backdrop-blur">
+                    <CheckCircle2 className="h-3 w-3" />
+                    Printed
+                  </div>
+                ) : (
+                  <div className="absolute top-3 right-3 flex h-8 w-8 items-center justify-center rounded-full border border-slate-700/80 bg-[#0B0E13]/85 text-[#F1F5F9] opacity-0 transition group-hover:opacity-100">
+                    <ArrowUpRight className="h-4 w-4 text-[#F59E0B]" />
+                  </div>
+                )}
               </div>
 
               {/* Body */}
