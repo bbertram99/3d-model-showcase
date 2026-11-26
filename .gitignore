@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.tmp-glb/
+3D models/
+Art/
+.DS_Store
+Thumbs.db

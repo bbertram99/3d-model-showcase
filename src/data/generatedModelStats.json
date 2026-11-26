@@ -1,0 +1,122 @@
+{
+  "king-graham": {
+    "sourceFile": "King Graham.3mf",
+    "originalTriangles": 1326560,
+    "originalVertices": 663270,
+    "dimensionsMm": [
+      71.3,
+      68.1,
+      100
+    ],
+    "webTriangles": 84998,
+    "glbSizeMb": 0.29
+  },
+  "gorath": {
+    "sourceFile": "Gorath.3mf",
+    "originalTriangles": 2466326,
+    "originalVertices": 1233063,
+    "dimensionsMm": [
+      70.2,
+      66.8,
+      100
+    ],
+    "webTriangles": 84974,
+    "glbSizeMb": 0.29
+  },
+  "roger-wilco": {
+    "sourceFile": "Roger_Wilco_3D.3mf",
+    "originalTriangles": 1277228,
+    "originalVertices": 638530,
+    "dimensionsMm": [
+      75.7,
+      83.3,
+      100
+    ],
+    "webTriangles": 85000,
+    "glbSizeMb": 0.29
+  },
+  "sonny-bonds": {
+    "sourceFile": "Sonny Bonds.3mf",
+    "originalTriangles": 938636,
+    "originalVertices": 469028,
+    "dimensionsMm": [
+      68.1,
+      67.9,
+      99.6
+    ],
+    "webTriangles": 84882,
+    "glbSizeMb": 0.28
+  },
+  "larry-laffer": {
+    "sourceFile": "Larry.3mf",
+    "originalTriangles": 741052,
+    "originalVertices": 370305,
+    "dimensionsMm": [
+      75.8,
+      77.5,
+      99.4
+    ],
+    "webTriangles": 84878,
+    "glbSizeMb": 0.28
+  },
+  "qfg-paladin": {
+    "sourceFile": "Paladin.3mf",
+    "originalTriangles": 869728,
+    "originalVertices": 434856,
+    "dimensionsMm": [
+      72.8,
+      72.8,
+      100
+    ],
+    "webTriangles": 85000,
+    "glbSizeMb": 0.28
+  },
+  "iceman": {
+    "sourceFile": "Iceman.3mf",
+    "originalTriangles": 797378,
+    "originalVertices": 398601,
+    "dimensionsMm": [
+      68.9,
+      70,
+      99.6
+    ],
+    "webTriangles": 84988,
+    "glbSizeMb": 0.28
+  },
+  "qfg-fighter": {
+    "sourceFile": "fighter.3mf",
+    "originalTriangles": 614602,
+    "originalVertices": 307291,
+    "dimensionsMm": [
+      70.1,
+      64.4,
+      99.7
+    ],
+    "webTriangles": 85000,
+    "glbSizeMb": 0.28
+  },
+  "qfg-magic-user": {
+    "sourceFile": "Magic User.3mf",
+    "originalTriangles": 625658,
+    "originalVertices": 312823,
+    "dimensionsMm": [
+      68.4,
+      86.4,
+      99.7
+    ],
+    "webTriangles": 84996,
+    "glbSizeMb": 0.28
+  },
+  "qfg-thief": {
+    "sourceFile": "Thief.3mf",
+    "originalTriangles": 614540,
+    "originalVertices": 307268,
+    "dimensionsMm": [
+      75.7,
+      74.1,
+      100
+    ],
+    "webTriangles": 85000,
+    "glbSizeMb": 0.28
+  }
+}
