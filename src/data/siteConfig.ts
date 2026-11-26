@@ -16,8 +16,8 @@ export const siteConfig = {
   makerWorldUrl: 'https://makerworld.com/en/@bbertram',
   visitorCounterNamespace: 'bbertram99-3d-showcase',
   visitorCounterKey: 'visits',
-  // Paste your deployed Google Apps Script Web App URL (ending in /exec) here to enable global guestbook persistence:
-  guestbookApiUrl: '',
+  guestbookApiUrl:
+    'https://script.google.com/macros/s/AKfycbzZykEVRUTmXVIXprZIMb_PnKvR9iwlPpoWzMjHdM3ylIK62EfyvbzmO2I_ud1HX9SaDQ/exec',
   socialLinks: [
     { label: 'MakerWorld (@bbertram)', href: 'https://makerworld.com/en/@bbertram' },
   ] as SocialLink[],
