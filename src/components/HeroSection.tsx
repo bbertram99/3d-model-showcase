@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowDown, Box, Printer, Sparkles, Maximize2 } from 'lucide-react';
+import { ArrowDown, Box, ExternalLink, Printer, Sparkles, Maximize2 } from 'lucide-react';
 import { CollectiblesModel } from '../data/modelsData';
 import { siteConfig } from '../data/siteConfig';
 import { assetUrl } from '../utils/assets';
@@ -89,6 +89,15 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               className="inline-flex items-center gap-2 rounded-xl border border-slate-700 bg-[#11161F] px-5 py-3 text-sm font-semibold text-[#F1F5F9] transition hover:border-[#F59E0B]/60 hover:text-[#F59E0B]"
             >
               View Stained-Glass Art
+            </a>
+            <a
+              href={siteConfig.makerWorldUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 rounded-xl border border-slate-800 bg-[#11161F]/70 px-4 py-3 text-sm font-medium text-[#94A3B8] transition hover:border-[#F59E0B]/50 hover:text-[#F59E0B]"
+            >
+              MakerWorld Profile
+              <ExternalLink className="h-3.5 w-3.5" />
             </a>
           </div>
         </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Printer } from 'lucide-react';
+import { Box, ExternalLink, Printer } from 'lucide-react';
 import { siteConfig } from '../data/siteConfig';
 
 export const Footer: React.FC = () => {
@@ -28,10 +28,11 @@ export const Footer: React.FC = () => {
               key={link.label}
               href={link.href}
               target="_blank"
-              rel="noreferrer"
-              className="transition hover:text-[#2DD4BF]"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 rounded-full border border-[#F59E0B]/30 bg-[#F59E0B]/10 px-3 py-1 font-medium text-[#F59E0B] transition hover:border-[#F59E0B] hover:bg-[#F59E0B]/20"
             >
-              {link.label}
+              <span>{link.label}</span>
+              <ExternalLink className="h-3 w-3" />
             </a>
           ))}
         </div>

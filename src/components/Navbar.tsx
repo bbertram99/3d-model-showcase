@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Layers } from 'lucide-react';
+import { Box, ExternalLink, Layers } from 'lucide-react';
 import { siteConfig } from '../data/siteConfig';
 
 interface NavbarProps {
@@ -38,12 +38,21 @@ export const Navbar: React.FC<NavbarProps> = ({ modelCount, artCount }) => {
         </nav>
 
         <div className="flex items-center gap-2.5">
-          <div className="flex items-center gap-2 rounded-full border border-slate-700/70 bg-[#11161F] px-3 py-1 text-xs font-mono-tech text-[#94A3B8]">
+          <div className="hidden sm:flex items-center gap-2 rounded-full border border-slate-700/70 bg-[#11161F] px-3 py-1 text-xs font-mono-tech text-[#94A3B8]">
             <Layers className="h-3.5 w-3.5 text-[#2DD4BF]" />
             <span>
               {modelCount} Models · {artCount} Artworks
             </span>
           </div>
+          <a
+            href={siteConfig.makerWorldUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 rounded-full border border-[#F59E0B]/40 bg-[#F59E0B]/10 px-3 py-1 text-xs font-medium text-[#F59E0B] transition hover:border-[#F59E0B] hover:bg-[#F59E0B]/20"
+          >
+            <span>MakerWorld</span>
+            <ExternalLink className="h-3 w-3" />
+          </a>
         </div>
       </div>
     </header>

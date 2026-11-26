@@ -6,6 +6,7 @@ import {
   Box,
   CheckCircle2,
   Clock,
+  ExternalLink,
   Printer,
   Maximize2,
   Minimize2,
@@ -413,6 +414,18 @@ export const ModelDetailModal: React.FC<ModelDetailModalProps> = ({
                 <span className="font-mono-tech text-[#F1F5F9]">{model.filament}</span>
               </div>
             </div>
+
+            {model.makerWorldUrl && (
+              <a
+                href={model.makerWorldUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 rounded-xl border border-[#F59E0B]/40 bg-[#F59E0B]/15 px-4 py-2.5 text-xs font-semibold text-[#F59E0B] transition hover:border-[#F59E0B] hover:bg-[#F59E0B]/25"
+              >
+                <span>View Print Profile on MakerWorld</span>
+                <ExternalLink className="h-3.5 w-3.5" />
+              </a>
+            )}
 
             <div>
               <h4 className="mb-2.5 font-mono-tech text-[11px] uppercase tracking-wider text-[#94A3B8]">

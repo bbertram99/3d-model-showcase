@@ -13,10 +13,9 @@ export const siteConfig = {
     'Classic adventure heroes reimagined as high-detail printable collectibles alongside multi-plate stained-glass 3D wall art — inspect every stage from original illustration and virtual clay sculpt to interactive 3D mesh and physical Snapmaker U1 prints.',
   printerName: 'Snapmaker U1',
   slicerStack: 'Snapmaker Orca / Multi-Plate',
+  makerWorldUrl: 'https://makerworld.com/en/@bbertram',
   socialLinks: [
-    // Add your links here when ready to publish:
-    // { label: 'GitHub', href: 'https://github.com/your-username' },
-    // { label: 'Printables', href: 'https://www.printables.com/@your-handle' },
+    { label: 'MakerWorld (@bbertram)', href: 'https://makerworld.com/en/@bbertram' },
   ] as SocialLink[],
   footerNote:
     'All 3D turntable meshes are web-optimized directly from the original .3mf fabrication files.',

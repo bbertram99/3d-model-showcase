@@ -27,6 +27,7 @@ export interface CollectiblesModel {
   printer: string;
   filament: string;
   glbPath: string;
+  makerWorldUrl?: string;
   stats: ModelStat;
   images: {
     card: string;
@@ -55,6 +56,7 @@ export const modelsCatalog: CollectiblesModel[] = [
     printer: 'Snapmaker U1',
     filament: 'Matte Charcoal PLA',
     glbPath: 'models/king-graham.glb',
+    makerWorldUrl: 'https://makerworld.com/en/models/3641723-king-graham-sierra-online',
     stats: modelStats['king-graham'],
     images: {
       card: 'media/king-graham/card.webp',
@@ -88,6 +90,7 @@ export const modelsCatalog: CollectiblesModel[] = [
     printer: 'Snapmaker U1',
     filament: 'Matte Charcoal PLA',
     glbPath: 'models/gorath.glb',
+    makerWorldUrl: 'https://makerworld.com/en/models/3653547-gorath',
     stats: modelStats['gorath'],
     images: {
       card: 'media/gorath/card.webp',
@@ -121,6 +124,7 @@ export const modelsCatalog: CollectiblesModel[] = [
     printer: 'Snapmaker U1',
     filament: 'Matte Charcoal PLA',
     glbPath: 'models/roger-wilco.glb',
+    makerWorldUrl: 'https://makerworld.com/en/models/3685846-space-quest-roger-wilco',
     stats: modelStats['roger-wilco'],
     images: {
       card: 'media/roger-wilco/card.webp',
@@ -152,6 +156,7 @@ export const modelsCatalog: CollectiblesModel[] = [
     printer: 'Snapmaker U1',
     filament: 'Matte Charcoal PLA',
     glbPath: 'models/sonny-bonds.glb',
+    makerWorldUrl: 'https://makerworld.com/en/models/3686462-police-quest-sonny-bonds',
     stats: modelStats['sonny-bonds'],
     images: {
       card: 'media/sonny-bonds/card.webp',
@@ -184,6 +189,7 @@ export const modelsCatalog: CollectiblesModel[] = [
     printer: 'Snapmaker U1',
     filament: 'Matte Charcoal PLA',
     glbPath: 'models/larry-laffer.glb',
+    makerWorldUrl: 'https://makerworld.com/en/models/3685795-leisure-suit-larry-laffer',
     stats: modelStats['larry-laffer'],
     images: {
       card: 'media/larry-laffer/card.webp',
@@ -212,6 +218,7 @@ export const modelsCatalog: CollectiblesModel[] = [
     printer: 'Snapmaker U1',
     filament: 'Matte Charcoal PLA',
     glbPath: 'models/qfg-paladin.glb',
+    makerWorldUrl: 'https://makerworld.com/en/models/3685814-quest-for-glory-paladin',
     stats: modelStats['qfg-paladin'],
     images: {
       card: 'media/qfg-paladin/card.webp',

@@ -337,7 +337,7 @@ export const ModelViewer3D: React.FC<ModelViewer3DProps> = ({
       <div
         ref={mountRef}
         aria-label={`Interactive 3D viewer for ${title}`}
-        className="relative z-10 h-full w-full cursor-grab active:cursor-grabbing"
+        className="relative z-10 h-full w-full touch-none cursor-grab active:cursor-grabbing"
       />
 
       {/* Loading overlay */}

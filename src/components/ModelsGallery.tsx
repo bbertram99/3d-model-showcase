@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from 'react';
-import { Box, CheckCircle2, Clock, Sparkles, ArrowUpRight, Layers } from 'lucide-react';
+import { Box, CheckCircle2, Clock, ExternalLink, Sparkles, ArrowUpRight, Layers } from 'lucide-react';
 import { CollectiblesModel, qfgDiorama } from '../data/modelsData';
 import { assetUrl } from '../utils/assets';
 
@@ -171,19 +171,33 @@ export const ModelsGallery: React.FC<ModelsGalleryProps> = ({ models, onSelectMo
                     </p>
                   </div>
 
-                  <div className="mt-4 flex items-center justify-between border-t border-slate-800 pt-3.5 text-xs font-mono-tech text-[#64748B]">
+                  <div className="mt-4 flex items-center justify-between gap-2 border-t border-slate-800 pt-3.5 text-xs font-mono-tech text-[#64748B]">
                     <span>{(model.stats?.originalTriangles ?? 0).toLocaleString()} tris</span>
-                    <button
-                      type="button"
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        onSelectModel(model, '3d');
-                      }}
-                      className="inline-flex items-center gap-1 text-[#2DD4BF] hover:underline"
-                    >
-                      <Box className="h-3.5 w-3.5" />
-                      Spin 3D
-                    </button>
+                    <div className="flex items-center gap-3">
+                      {model.makerWorldUrl && (
+                        <a
+                          href={model.makerWorldUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={(e) => e.stopPropagation()}
+                          className="inline-flex items-center gap-1 text-[#94A3B8] transition hover:text-[#F59E0B]"
+                        >
+                          MakerWorld
+                          <ExternalLink className="h-3 w-3" />
+                        </a>
+                      )}
+                      <button
+                        type="button"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          onSelectModel(model, '3d');
+                        }}
+                        className="inline-flex items-center gap-1 text-[#2DD4BF] hover:underline"
+                      >
+                        <Box className="h-3.5 w-3.5" />
+                        Spin 3D
+                      </button>
+                    </div>
                   </div>
                 </div>
               </article>

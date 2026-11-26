@@ -124,7 +124,7 @@ export const CompareSlider: React.FC<CompareSliderProps> = ({
         onPointerUp={handlePointerUp}
         onPointerCancel={handlePointerUp}
         onKeyDown={handleKeyDown}
-        className={`relative w-full ${aspectClass} select-none overflow-hidden rounded-xl border border-slate-700/60 bg-[#0B0E13] cursor-ew-resize focus:outline-none focus:ring-2 focus:ring-[#2DD4BF]/60`}
+        className={`relative w-full ${aspectClass} touch-none select-none overflow-hidden rounded-xl border border-slate-700/60 bg-[#0B0E13] cursor-ew-resize focus:outline-none focus:ring-2 focus:ring-[#2DD4BF]/60`}
       >
         {/* Right (underlay) */}
         <img
