@@ -56,7 +56,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 STAGE 01
               </div>
               <p className="mt-1 text-xs font-semibold text-[#F1F5F9]">2D Concept</p>
-              <p className="text-[11px] text-[#64748B]">Art &amp; Paint Study</p>
+              <p className="text-[11px] text-[#64748B]">Art &amp; Virtual Paint</p>
             </div>
             <div className="rounded-xl border border-slate-800 bg-[#11161F]/80 p-3">
               <div className="flex items-center gap-1.5 font-mono-tech text-[11px] text-[#2DD4BF]">
@@ -118,7 +118,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             <div className="flex items-center gap-1 rounded-lg border border-slate-800 bg-[#0B0E13] p-1">
               {(
                 [
-                  { id: 'painted', label: 'Painted' },
+                  { id: 'painted', label: 'Virtual Paint' },
                   { id: '3d', label: 'Live 3D' },
                   { id: 'printed', label: 'Printed' },
                 ] as { id: HeroViewMode; label: string }[]
@@ -157,9 +157,14 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             <div className="group relative h-[380px] sm:h-[440px] w-full overflow-hidden rounded-xl border border-slate-700/70 bg-[#0B0E13]">
               <img
                 src={heroImageSrc}
-                alt={`${active.title} — ${viewMode}`}
+                alt={`${active.title} - ${viewMode}`}
                 className="h-full w-full object-cover object-top transition duration-500 group-hover:scale-[1.02]"
               />
+              {viewMode === 'painted' && (
+                <div className="pointer-events-none absolute top-3 left-3 rounded-md border border-[#F59E0B]/35 bg-[#0B0E13]/85 px-2.5 py-1 font-mono-tech text-[10px] uppercase tracking-wider text-[#F59E0B] backdrop-blur">
+                  Virtually Painted Preview
+                </div>
+              )}
               <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#0B0E13]/90 to-transparent" />
               <div className="absolute right-3 bottom-3 flex items-center gap-2">
                 <button

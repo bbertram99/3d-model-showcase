@@ -62,8 +62,11 @@ export const ModelsGallery: React.FC<ModelsGalleryProps> = ({ models, onSelectMo
               3D Printed Models &amp; Sculpt Archive
             </h2>
             <p className="mt-2 max-w-2xl text-sm leading-relaxed text-[#94A3B8] sm:text-base">
-              Select any character to explore the complete journey — from original 2D illustration
-              and grey-clay sculpt to real-time WebGL turntable and finished Snapmaker U1 prints.
+              Select any character to explore the complete journey - from 2D concept and virtually
+              painted preview to grey-clay sculpt, live WebGL turntable, and raw Snapmaker U1 prints.
+            </p>
+            <p className="mt-3 inline-flex items-center gap-2 rounded-lg border border-[#F59E0B]/30 bg-[#F59E0B]/10 px-3 py-1.5 text-xs text-[#FCD34D]">
+              Note: Colored figure images are virtually painted 3D previews showing what each model could look like painted. None of the physical 3D prints are painted yet - click any card to view the raw printed photos.
             </p>
           </div>
 
@@ -230,7 +233,7 @@ export const ModelsGallery: React.FC<ModelsGalleryProps> = ({ models, onSelectMo
                 <div className="flex rounded-lg border border-slate-800 bg-[#0B0E13] p-1 text-xs">
                   {(
                     [
-                      { id: 'painted', label: 'Painted' },
+                      { id: 'painted', label: 'Virtual Paint' },
                       { id: 'virtual', label: 'Clay 3D' },
                       { id: 'concept', label: '2D Art' },
                     ] as const

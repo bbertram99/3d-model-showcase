@@ -22,9 +22,9 @@ export const ArtGallery: React.FC<ArtGalleryProps> = ({ artworks, onSelectArt })
               Stained-Glass 3D Wall Art
             </h2>
             <p className="mt-2 max-w-2xl text-sm leading-relaxed text-[#94A3B8] sm:text-base">
-              Lead-came illustrations engineered into multi-plate 3D-printable puzzle reliefs —
-              each tile numbered, beveled, and calibrated with 0.12 mm inlay clearance for
-              multi-toolhead Snapmaker U1 fabrication.
+              Lead-came illustrations engineered into multi-plate 3D-printable puzzle reliefs -
+              fabricated from separate colored filament plates, each tile numbered, beveled, and
+              calibrated with 0.12 mm inlay clearance on the Snapmaker U1.
             </p>
           </div>
           <div className="flex items-center gap-3 font-mono-tech text-xs text-[#94A3B8]">

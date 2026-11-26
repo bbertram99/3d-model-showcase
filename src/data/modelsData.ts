@@ -52,7 +52,7 @@ export const modelsCatalog: CollectiblesModel[] = [
     statusLabel: 'Printed',
     tagline: 'Hero of Daventry atop the snowy crags of Serenia',
     description:
-      "Inspired by the iconic King's Quest V key art, King Graham stands poised on a sculpted rocky outcrop in his plumed adventurer's cap, red tunic, and flowing cloak. Captured across full 2D painterly concept, virtual clay sculpt, interactive 3D mesh, and finished charcoal PLA print.",
+      "Inspired by the iconic King's Quest V key art, King Graham stands poised on a sculpted rocky outcrop in his plumed adventurer's cap, red tunic, and flowing cloak. Captured across 2D key artwork, a virtually painted preview, grey-clay sculpt, interactive 3D mesh, and an unpainted matte charcoal PLA print.",
     printer: 'Snapmaker U1',
     filament: 'Matte Charcoal PLA',
     glbPath: 'models/king-graham.glb',
@@ -78,7 +78,7 @@ export const modelsCatalog: CollectiblesModel[] = [
   {
     id: 'gorath',
     slug: 'gorath',
-    title: 'Gorath of Krondor',
+    title: 'Gorath - Betrayal at Krondor',
     character: 'Gorath the Moredhel',
     franchise: 'Betrayal at Krondor',
     year: '1993 · Dynamix / Sierra',
@@ -112,7 +112,7 @@ export const modelsCatalog: CollectiblesModel[] = [
   {
     id: 'roger-wilco',
     slug: 'roger-wilco',
-    title: 'Roger Wilco — Space Janitor',
+    title: 'Roger Wilco - Space Janitor',
     character: 'Roger Wilco',
     franchise: 'Space Quest',
     year: '1986 · Sierra On-Line',
@@ -152,7 +152,7 @@ export const modelsCatalog: CollectiblesModel[] = [
     statusLabel: 'Printed',
     tagline: 'Lytton Police Department badge, traffic cone, and duty belt',
     description:
-      'Lytton PD’s finest rendered in crisp tactical detail — complete with shoulder patches, duty revolver, radio, baton, and a sculpted pavement base featuring the Lytton Police Dept. shield and weathered traffic cone.',
+      'Lytton PD’s finest rendered in crisp tactical detail - complete with shoulder patches, duty revolver, radio, baton, and a sculpted pavement base featuring the Lytton Police Dept. shield and weathered traffic cone.',
     printer: 'Snapmaker U1',
     filament: 'Matte Charcoal PLA',
     glbPath: 'models/sonny-bonds.glb',
@@ -185,7 +185,7 @@ export const modelsCatalog: CollectiblesModel[] = [
     statusLabel: 'Printed',
     tagline: 'White polyester suit, gold medallion, rose, and casino floor base',
     description:
-      'Larry Laffer strikes his signature suave pose on a Lost Wages casino carpet base strewn with poker chips, playing cards, and a tipped martini glass — sculpted with expressive stylized proportions and crisp lapel details.',
+      'Larry Laffer strikes his signature suave pose on a Lost Wages casino carpet base strewn with poker chips, playing cards, and a tipped martini glass - sculpted with expressive stylized proportions and crisp lapel details.',
     printer: 'Snapmaker U1',
     filament: 'Matte Charcoal PLA',
     glbPath: 'models/larry-laffer.glb',
@@ -206,7 +206,7 @@ export const modelsCatalog: CollectiblesModel[] = [
   {
     id: 'qfg-paladin',
     slug: 'qfg-paladin',
-    title: 'The Paladin — Flaming Sword',
+    title: 'Quest for Glory - Paladin',
     character: 'Hero of Spielburg',
     franchise: 'Quest for Glory',
     year: '1989 · Sierra On-Line',
@@ -238,7 +238,7 @@ export const modelsCatalog: CollectiblesModel[] = [
   {
     id: 'iceman',
     slug: 'iceman',
-    title: 'Lt. Johnny Westland — Iceman',
+    title: 'Lt. Johnny Westland - Iceman',
     character: 'Johnny Westland',
     franchise: 'Codename: ICEMAN',
     year: '1989 · Sierra On-Line',
@@ -263,7 +263,7 @@ export const modelsCatalog: CollectiblesModel[] = [
   {
     id: 'qfg-fighter',
     slug: 'qfg-fighter',
-    title: 'Quest for Glory — Fighter',
+    title: 'Quest for Glory - Fighter',
     character: 'The Fighter',
     franchise: 'Quest for Glory',
     year: '1989 · Hero Selection',
@@ -287,7 +287,7 @@ export const modelsCatalog: CollectiblesModel[] = [
   {
     id: 'qfg-magic-user',
     slug: 'qfg-magic-user',
-    title: 'Quest for Glory — Magic User',
+    title: 'Quest for Glory - Magic User',
     character: 'The Magic User',
     franchise: 'Quest for Glory',
     year: '1989 · Hero Selection',
@@ -311,7 +311,7 @@ export const modelsCatalog: CollectiblesModel[] = [
   {
     id: 'qfg-thief',
     slug: 'qfg-thief',
-    title: 'Quest for Glory — Thief',
+    title: 'Quest for Glory - Thief',
     character: 'The Thief',
     franchise: 'Quest for Glory',
     year: '1989 · Hero Selection',
@@ -335,7 +335,7 @@ export const modelsCatalog: CollectiblesModel[] = [
 ];
 
 export const qfgDiorama = {
-  title: "Quest for Glory — Hero's Choice Diorama",
+  title: "Quest for Glory - Hero's Choice Diorama",
   subtitle: 'Three Arches · Fighter · Magic User · Thief',
   description:
     'A full gothic-archway diorama concept uniting all three classic starting classes beneath moonlit stone ruins, complete with twin wall torches, twisted dead tree, and carved wooden stage plinth.',

@@ -36,7 +36,7 @@ export const artProjects: ArtProject[] = [
   {
     id: 'art-kq5',
     slug: 'art-kq5',
-    title: "King's Quest V — Daventry Horizon",
+    title: "King's Quest V - Daventry Horizon",
     subtitle: 'Stained-Glass Intarsia Wall Art',
     category: 'Retro Adventure Tribute',
     description:
@@ -81,7 +81,7 @@ export const artProjects: ArtProject[] = [
     subtitle: 'D20 & Weapons Crest Relief',
     category: 'Tabletop RPG Crest',
     description:
-      'A richly layered stained-glass crest featuring a raised D20 centerpiece, crossed mace and battleaxe, filigree flourishes, and Dungeons & Dragons emblem — split across 10 multi-plate slicer beds with engraved assembly indices.',
+      'A richly layered stained-glass crest featuring a raised D20 centerpiece, crossed mace and battleaxe, filigree flourishes, and Dungeons & Dragons emblem - split across 10 multi-plate slicer beds with engraved assembly indices.',
     dimensionsMm: '170.5 × 239.7 × 9.9 mm',
     plateCount: 10,
     colorPlateCount: 9,
@@ -119,7 +119,7 @@ export const artProjects: ArtProject[] = [
     subtitle: 'Classroom Door Stained-Glass Plaque',
     category: 'Custom Commission / Gift',
     description:
-      'Playful stained-glass classroom welcome plaque with 118 verified puzzle tiles — books, globe, beaker, ruler, and bunting banner — color-matched to Snapmaker PLA spools and validated with zero frame interference.',
+      'Playful stained-glass classroom welcome plaque with 118 verified puzzle tiles - books, globe, beaker, ruler, and bunting banner - color-matched to Snapmaker PLA spools and validated with zero frame interference.',
     dimensionsMm: '198.6 × 246.7 × 9.9 mm',
     plateCount: 12,
     colorPlateCount: 11,

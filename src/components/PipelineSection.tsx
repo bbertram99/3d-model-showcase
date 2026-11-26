@@ -4,9 +4,9 @@ import { Sparkles, Box, Sliders, Printer } from 'lucide-react';
 const STEPS = [
   {
     index: '01',
-    title: '2D Concept & Painted Look',
+    title: '2D Concept & Virtual Paint',
     detail:
-      'Every piece begins as custom 2D artwork — establishing pose, silhouette, costume fidelity, and painted color study before touching a mesh.',
+      'Every piece begins as custom 2D artwork plus a virtually painted 3D preview showing what the finished figure could look like once hand-painted.',
     icon: Sparkles,
     accent: 'text-[#2DD4BF] border-[#2DD4BF]/30 bg-[#2DD4BF]/10',
   },
@@ -30,7 +30,7 @@ const STEPS = [
     index: '04',
     title: 'Physical Fabrication',
     detail:
-      'Printed on the Snapmaker U1 in matte charcoal PLA or multi-spool color plates, turning digital nostalgia into tangible shelf pieces.',
+      'Character figures are currently printed in unpainted matte charcoal PLA on the Snapmaker U1, while stained-glass wall art is fabricated from multi-color printed filament plates.',
     icon: Printer,
     accent: 'text-[#F59E0B] border-[#F59E0B]/30 bg-[#F59E0B]/10',
   },

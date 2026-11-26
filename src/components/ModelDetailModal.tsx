@@ -76,7 +76,7 @@ export const ModelDetailModal: React.FC<ModelDetailModalProps> = ({
   ];
 
   const compareStages: CompareStageOption[] = [
-    { id: 'painted', label: 'Painted Concept', src: assetUrl(model.images.painted) },
+    { id: 'painted', label: 'Virtually Painted', src: assetUrl(model.images.painted) },
     { id: 'virtual', label: 'Virtual 3D', src: assetUrl(model.images.virtual) },
   ];
   if (model.images.concept) {
@@ -191,7 +191,7 @@ export const ModelDetailModal: React.FC<ModelDetailModalProps> = ({
                           : 'bg-[#18202C] text-[#94A3B8] hover:text-[#F1F5F9]'
                       }`}
                     >
-                      Painted Maquette Study
+                      Virtually Painted Preview
                     </button>
                     <button
                       type="button"
@@ -222,6 +222,11 @@ export const ModelDetailModal: React.FC<ModelDetailModalProps> = ({
                     Fullscreen
                   </button>
                 </div>
+                <p className="text-xs text-[#94A3B8]">
+                  {conceptVariant === 'painted' || !model.images.concept
+                    ? 'Virtually painted 3D render showing what this figure could look like once painted. Physical prints are currently unpainted matte charcoal PLA.'
+                    : 'Original 2D concept illustration used to guide pose, silhouette, and sculpt proportions.'}
+                </p>
               </div>
             )}
 
@@ -398,7 +403,7 @@ export const ModelDetailModal: React.FC<ModelDetailModalProps> = ({
               <div className="flex items-center justify-between">
                 <span className="text-[#94A3B8]">Web Turntable</span>
                 <span className="font-mono-tech text-[#2DD4BF]">
-                  {(model.stats?.webTriangles ?? 0).toLocaleString()} tris ({model.stats?.glbSizeMb ?? '—'} MB)
+                  {(model.stats?.webTriangles ?? 0).toLocaleString()} tris ({model.stats?.glbSizeMb ?? '-'} MB)
                 </span>
               </div>
               <div className="flex items-center justify-between">
@@ -433,7 +438,7 @@ export const ModelDetailModal: React.FC<ModelDetailModalProps> = ({
               </h4>
               <ul className="space-y-2 text-xs">
                 <li className="flex items-center justify-between rounded-lg border border-slate-800 bg-[#151C27] px-3 py-2">
-                  <span className="text-[#E2E8F0]">2D Concept &amp; Color Study</span>
+                  <span className="text-[#E2E8F0]">2D Concept &amp; Virtual Paint</span>
                   <CheckCircle2 className="h-4 w-4 text-[#2DD4BF]" />
                 </li>
                 <li className="flex items-center justify-between rounded-lg border border-slate-800 bg-[#151C27] px-3 py-2">

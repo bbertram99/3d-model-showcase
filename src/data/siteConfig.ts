@@ -10,7 +10,7 @@ export const siteConfig = {
   heroEyebrow: 'CONCEPT  →  SCULPT  →  FABRICATION',
   heroTitle: 'From 2D Concept Art to Physical 3D Prints.',
   heroSubtitle:
-    'Classic adventure heroes reimagined as high-detail printable collectibles alongside multi-plate stained-glass 3D wall art — inspect every stage from original illustration and virtual clay sculpt to interactive 3D mesh and physical Snapmaker U1 prints.',
+    'Classic adventure heroes reimagined as high-detail printable collectibles alongside multi-plate stained-glass 3D wall art - inspect every stage from 2D concept and virtually painted 3D preview to interactive mesh and unpainted Snapmaker U1 prints (plus colored filament wall art).',
   printerName: 'Snapmaker U1',
   slicerStack: 'Snapmaker Orca / Multi-Plate',
   makerWorldUrl: 'https://makerworld.com/en/@bbertram',
